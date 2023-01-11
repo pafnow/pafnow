@@ -1,6 +1,13 @@
-/** @odoo-module **/
+odoo.define('@web/file_a', function (require) {
+'use strict';
+let __exports = {};
 
-import { SIZES } from "@web/core/ui/ui_service";
+const { SIZES } = require("@web/core/ui/ui_service");
+
+SIZES.XXL = 10;
+alert("Hello world!");
+
+)};
 
 /*
 Force the chatter to be displayed under the form for typical HD resolutions.
@@ -8,5 +15,4 @@ We use an out of bounds integer related to XXL size (defined in web/static/src/c
 Modifying MEDIAS_BREAKPOINTS doesn't trick some function using it (ex getMediaQueryLists).
 Trying to remove o-aside class to chatter is not simple because it also need to change the flexbox defined around the whole form.
  */
-SIZES.XXL = 10;
-alert("Hello world!");
+
