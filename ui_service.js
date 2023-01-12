@@ -7,7 +7,7 @@ const { SIZES } = require("@web/core/ui/ui_service");
 SIZES.XXL = 10;
 alert("Hello world!");
 
-)};
+});
 
 /*
 Force the chatter to be displayed under the form for typical HD resolutions.
